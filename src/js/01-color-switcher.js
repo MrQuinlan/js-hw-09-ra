@@ -4,7 +4,7 @@ const refs = {
   stopBtn: document.querySelector('[data-stop]'),
 };
 
-let intervalId = 0;
+let intervalId = null;
 
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)

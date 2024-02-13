@@ -1,0 +1,23 @@
+window {
+  position: relative;
+}
+
+.color-switcher-btn-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.color-switcher-btn {
+  width: 120px;
+  height: 70px;
+  border-radius: 10px;
+
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.color-switcher-btn:not(:last-child) {
+  margin-right: 20px;
+}
