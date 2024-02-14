@@ -18,8 +18,7 @@ const options = {
   minuteIncrement: 1,
   minDate: new Date().fp_incr(1),
   onClose(selectedDates, dateStr) {
-    time = new Date(selectedDates[0]).getTime(); // - new Date().getTime();
-
+    const time = new Date(selectedDates[0]).getTime();
     refs.startBtn.toggleAttribute('disabled');
 
     refs.startBtn.addEventListener('click', () => startCountdownTimer(time));
